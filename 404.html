@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  // GitHub serves 404.html at whatever address was requested, so point relative links at the site root.
+  (function () {
+    var seg = location.pathname.split('/')[1];
+    var root = /\.github\.io$/.test(location.hostname) && seg && seg.indexOf('.') === -1 ? '/' + seg + '/' : '/';
+    document.write('<base href="' + root + '">');
+  })();
+</script>
+<title>Page not found | Cornell Maker Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/modernist.css">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<div style="background: var(--color-accent-700); color: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;">
+    <a href="https://www.cornell.edu" style="display: block; line-height: 0;"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cornell_University_logo.svg" alt="Cornell University" style="height: 30px; width: auto; display: block; filter: brightness(0) invert(1);"></a>
+    <form class="site-search" action="https://www.google.com/search" method="get" role="search" style="display: flex; align-items: stretch; margin: 0;">
+      <input type="search" name="q" placeholder="Search this site" aria-label="Search this site" style="font: inherit; font-size: 14px; padding: 8px 12px; border: 2px solid var(--color-bg); border-right: 0; background: transparent; color: var(--color-bg); width: 200px; border-radius: 0; outline-offset: 2px;">
+      <button type="submit" style="font: inherit; font-size: 14px; font-weight: 700; padding: 8px 14px; border: 2px solid var(--color-bg); background: var(--color-bg); color: var(--color-accent-700); cursor: pointer; border-radius: 0;">Search</button>
+    </form>
+  </div>
+</div>
+
+<header style="border-bottom: 2px solid var(--color-divider); background: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px;">
+    <a href="./" style="text-decoration: none; font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; line-height: 1.1;">Cornell Maker Club</a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 15px;">
+      <a href="join/" style="text-decoration: none;">Join</a>
+      <a href="resources/" style="text-decoration: none;">Resources</a>
+      <a href="make-a-thon/" style="text-decoration: none;">Make-a-thon</a>
+      <a href="project-videos-and-demos/" style="text-decoration: none;">Projects</a>
+      <a href="safety/" style="text-decoration: none;">Safety</a>
+      <a href="contact/" style="text-decoration: none;">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 48px) 120px; display: grid; gap: 20px;">
+    <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(48px, 7vw, 96px); line-height: 1; letter-spacing: -0.03em; margin: 0;">Page not found</h1>
+    <p style="font-size: 18px; line-height: 1.6; margin: 0; max-width: 56ch;">This page doesn’t exist yet, or it has moved.</p>
+    <div style="display: flex;"><a class="btn btn-primary" href="" style="text-decoration: none;">Back to home</a></div>
+  </section>
+</main>
+
+<footer style="background: var(--color-text); color: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 48px) 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; font-size: 14px; line-height: 1.7;">
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-family: var(--font-heading); font-size: 16px;">Cornell Maker Club</strong>
+      <span>209 Phillips Hall</span>
+      <span>Cornell University, Ithaca, NY 14853</span>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Members</strong>
+      <a href="partordering/" style="color: var(--color-bg);">Part ordering</a>
+      <a href="maintenance-request/" style="color: var(--color-bg);">Maintenance request</a>
+      <a href="project-storage/" style="color: var(--color-bg);">Project storage</a>
+      <a href="safety/" style="color: var(--color-bg);">Safety</a>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Learn</strong>
+      <a href="workshops/" style="color: var(--color-bg);">Workshops</a>
+      <a href="project-help/" style="color: var(--color-bg);">Project help</a>
+      <a href="online-pcb-seminar/" style="color: var(--color-bg);">Online PCB seminar</a>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Follow</strong>
+      <a href="https://www.instagram.com/cornellmakerclub/" style="color: var(--color-bg);">Instagram</a>
+      <a href="https://www.linkedin.com/company/cornell-maker-club" style="color: var(--color-bg);">LinkedIn</a>
+      <a href="contact/" style="color: var(--color-bg);">Contact us</a>
+    </div>
+    <p style="grid-column: 1 / -1; margin: 16px 0 0; padding-top: 20px; border-top: 1px solid var(--color-neutral-700); font-size: 13px;">© <span data-year="">2026</span> Cornell University. If you have a disability and are having trouble accessing information on this website or need materials in an alternate format, contact <a href="mailto:web-accessibility@cornell.edu" style="color: var(--color-bg);">web-accessibility@cornell.edu</a> for assistance.</p>
+  </div>
+</footer>
+</body>
+</html>

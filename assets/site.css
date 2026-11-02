@@ -1,0 +1,23 @@
+/* Cornell Maker Club — page basics on top of the Modernist tokens (modernist.css). */
+body { margin: 0; background: var(--color-bg); color: var(--color-text); text-wrap: pretty; }
+a { color: var(--color-text); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--color-accent-700); }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+
+/* Quick-link tiles and resource rows: hover fills the cell with the accent */
+.fill:hover, .fill:focus-visible { background: var(--color-accent) !important; color: var(--color-bg) !important; }
+
+/* Content column that spans the full row under a section heading */
+.span-2 { grid-column: 1 / -1; }
+
+/* Utility band search: keep the white focus ring visible on red */
+.site-search :focus-visible { outline-color: var(--color-bg); }
+
+/* Contact page: role name beside its people, stacked on phones */
+.role-row { display: grid; grid-template-columns: 220px 1fr; gap: 16px 56px; }
+@media (max-width: 720px) { .role-row { grid-template-columns: 1fr; } }
+
+/* Approved vendors disclosure */
+details > summary { list-style-position: inside; }
+details > summary:hover { color: var(--color-accent-700); }

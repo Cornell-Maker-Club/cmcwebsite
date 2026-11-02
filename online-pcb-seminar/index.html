@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online PCB Seminar | Cornell Maker Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../assets/modernist.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body>
+<div style="background: var(--color-accent-700); color: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;">
+    <a href="https://www.cornell.edu" style="display: block; line-height: 0;"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cornell_University_logo.svg" alt="Cornell University" style="height: 30px; width: auto; display: block; filter: brightness(0) invert(1);"></a>
+    <form class="site-search" action="https://www.google.com/search" method="get" role="search" style="display: flex; align-items: stretch; margin: 0;">
+      <input type="search" name="q" placeholder="Search this site" aria-label="Search this site" style="font: inherit; font-size: 14px; padding: 8px 12px; border: 2px solid var(--color-bg); border-right: 0; background: transparent; color: var(--color-bg); width: 200px; border-radius: 0; outline-offset: 2px;">
+      <button type="submit" style="font: inherit; font-size: 14px; font-weight: 700; padding: 8px 14px; border: 2px solid var(--color-bg); background: var(--color-bg); color: var(--color-accent-700); cursor: pointer; border-radius: 0;">Search</button>
+    </form>
+  </div>
+</div>
+
+<header style="border-bottom: 2px solid var(--color-divider); background: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px;">
+    <a href="../" style="text-decoration: none; font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; line-height: 1.1;">Cornell Maker Club</a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 15px;">
+      <a href="../join/" style="text-decoration: none;">Join</a>
+      <a href="../resources/" aria-current="page" style="text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--color-accent); text-underline-offset: 6px;">Resources</a>
+      <a href="../make-a-thon/" style="text-decoration: none;">Make-a-thon</a>
+      <a href="../project-videos-and-demos/" style="text-decoration: none;">Projects</a>
+      <a href="../safety/" style="text-decoration: none;">Safety</a>
+      <a href="../contact/" style="text-decoration: none;">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-top: 48px; padding-bottom: 56px; display: grid; gap: 20px;">
+      <nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px;"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../resources/">Resources</a><span aria-hidden="true">/</span><span aria-current="page">Online PCB Seminar</span></nav>
+      <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(48px, 7vw, 96px); line-height: 1; letter-spacing: -0.03em; margin: 0;">Online PCB Seminar</h1>
+      <p style="font-size: 18px; line-height: 1.6; margin: 0; max-width: 56ch;">Learn to design, manufacture and test printed circuit boards. These notes and videos come from the 2020 seminar run by Katie Bradford.</p>
+  </section>
+
+  <section id="about" style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 72px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">About the seminar</h2>
+      <div style="display: grid; gap: 20px; align-content: start; min-width: 0;">
+        <p style="font-size: 17px; line-height: 1.65; margin: 0;">The seminar combined presentations and videos on PCB design with a hands-on part: designing your own board, then assembling and testing it. CMC no longer provides the boards and components, but the notes and videos are still a great way to get started with PCB design.</p>
+        <div style="display: grid; gap: 6px;">
+          <h3 style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0; padding-left: 18px; color: var(--color-accent-700);">Correction</h3>
+          <p style="font-size: 15px; line-height: 1.6; margin: 0; max-width: 80ch; padding-left: 16px; border-left: 2px solid var(--color-accent);">One video uses the IPC-compliant footprint wizard’s SOJ option. Don’t use it: that’s a surface-mount package. Use the regular DIP footprint wizard instead, or make the footprint by hand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 72px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Schedule</h2>
+      <div class="span-2" style="display: grid; gap: 20px; align-content: start; min-width: 0;">
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; min-width: 640px;">
+            <thead><tr><th scope="col" style="text-align: left; padding: 10px 12px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 2px solid var(--color-divider);">Week</th><th scope="col" style="text-align: left; padding: 10px 12px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 2px solid var(--color-divider);">Topics</th><th scope="col" style="text-align: left; padding: 10px 12px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 2px solid var(--color-divider);">Deliverables</th><th scope="col" style="text-align: left; padding: 10px 12px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 2px solid var(--color-divider);">Notes and slides</th></tr></thead>
+            <tbody><tr><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top; font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--color-accent-700);">0</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Intro</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Install Altium</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;"><a href="https://makerclub.ece.cornell.edu/files/2020/09/0-Workshop-Intro.pdf">[0] Workshop Intro</a><br><a href="https://makerclub.ece.cornell.edu/files/2020/09/Setting-Up-Altium-1.pdf">Setting Up Altium</a></td></tr><tr><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top; font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--color-accent-700);">1</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Electronic components overview, soldering</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Assemble board</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;"><a href="https://makerclub.ece.cornell.edu/files/2020/09/1-Basic-Electronics-Overview.pdf">[1] Basic Electronics Overview</a><br><a href="https://makerclub.ece.cornell.edu/files/2020/09/1b-Soldering.pdf">[1b] Soldering</a><br><a href="https://makerclub.ece.cornell.edu/files/2020/09/Board_BOM.pdf">Board BOM</a></td></tr><tr><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top; font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--color-accent-700);">2</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Design planning, component selection and design</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Create a component in Altium</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;"><a href="https://makerclub.ece.cornell.edu/files/2020/09/2-Design-Planning.pdf">[2] Design Planning</a><br><a href="https://makerclub.ece.cornell.edu/files/2020/09/3-Component-Selection.pdf">[3] Component Selection</a><br><a href="https://makerclub.ece.cornell.edu/files/2020/10/Clock-Tower-Component-Creation-3.pdf">Clock Tower Component Creation</a></td></tr><tr><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top; font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--color-accent-700);">3</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Schematic design</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">First draft schematic</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;"><a href="https://makerclub.ece.cornell.edu/files/2020/10/4-Schematic-Design.pdf">[4] Schematic Design</a><br><a href="https://makerclub.ece.cornell.edu/files/2020/10/Clock_Tower_NETID.zip">Clock_Tower_NETID (zip)</a></td></tr><tr><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top; font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--color-accent-700);">4</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Layout design</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Fix schematic, first draft layout</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;"><a href="https://makerclub.ece.cornell.edu/files/2020/10/5-PCB-Layout.pdf">[5] PCB Layout</a><br><a href="https://makerclub.ece.cornell.edu/files/2020/10/How-to-Do-Layout-Things.pdf">How to Do Layout Things</a></td></tr><tr><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top; font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--color-accent-700);">5</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Manufacturing, test and validation</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Fix layout, pick final project</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;"><a href="https://makerclub.ece.cornell.edu/files/2020/10/6-PCB-Manufacturing.pdf">[6] PCB Manufacturing</a><br><a href="https://makerclub.ece.cornell.edu/files/2020/11/7-Testing-and-Verification.pdf">[7] Testing and Verification</a></td></tr><tr><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top; font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--color-accent-700);">6</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Advanced topics</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Schematic for final project</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;"><a href="https://makerclub.ece.cornell.edu/files/2020/11/08-Advanced-Topics.pdf">[08] Advanced Topics</a></td></tr><tr><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top; font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--color-accent-700);">7</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Possible guest lectures</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">Layout final project, order boards</td><td style="padding: 16px 12px; border-bottom: 1px solid var(--color-neutral-300); vertical-align: top;">—</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos" style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 96px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-top: 2px solid var(--color-divider); padding-top: 32px; margin-bottom: 24px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Videos</h2><span style="font-size: 15px;">13 videos</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 32px 24px;">
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/3kXvPxcdmx0" title="PCB seminar video 1" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 1</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/uWydH2wBQUc" title="PCB seminar video 2" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 2</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/8yE3KZmTkD8" title="PCB seminar video 3" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 3</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/9myrNT9hOmw" title="PCB seminar video 4" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 4</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/HNUsteuz-a4" title="PCB seminar video 5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 5</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/pJO0j_mBTmk" title="PCB seminar video 6" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 6</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/d1VFGxnK5v8" title="PCB seminar video 7" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 7</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/sB-SybpBACs" title="PCB seminar video 8" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 8</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/OGdrJzUS858" title="PCB seminar video 9" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 9</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/Sd75CmrYIMQ" title="PCB seminar video 10" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 10</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/3GXvHqs2QuY" title="PCB seminar video 11" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 11</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/O1E8SMM95w8" title="PCB seminar video 12" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 12</figcaption>
+      </figure>
+      <figure style="margin: 0; display: grid; gap: 8px;">
+        <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/pt-6ut7UbmI" title="PCB seminar video 13" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+        <figcaption style="font-size: 14px; color: var(--color-neutral-700);">Video 13</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer style="background: var(--color-text); color: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 48px) 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; font-size: 14px; line-height: 1.7;">
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-family: var(--font-heading); font-size: 16px;">Cornell Maker Club</strong>
+      <span>209 Phillips Hall</span>
+      <span>Cornell University, Ithaca, NY 14853</span>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Members</strong>
+      <a href="../partordering/" style="color: var(--color-bg);">Part ordering</a>
+      <a href="../maintenance-request/" style="color: var(--color-bg);">Maintenance request</a>
+      <a href="../project-storage/" style="color: var(--color-bg);">Project storage</a>
+      <a href="../safety/" style="color: var(--color-bg);">Safety</a>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Learn</strong>
+      <a href="../workshops/" style="color: var(--color-bg);">Workshops</a>
+      <a href="../project-help/" style="color: var(--color-bg);">Project help</a>
+      <a href="../online-pcb-seminar/" style="color: var(--color-bg);">Online PCB seminar</a>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Follow</strong>
+      <a href="https://www.instagram.com/cornellmakerclub/" style="color: var(--color-bg);">Instagram</a>
+      <a href="https://www.linkedin.com/company/cornell-maker-club" style="color: var(--color-bg);">LinkedIn</a>
+      <a href="../contact/" style="color: var(--color-bg);">Contact us</a>
+    </div>
+    <p style="grid-column: 1 / -1; margin: 16px 0 0; padding-top: 20px; border-top: 1px solid var(--color-neutral-700); font-size: 13px;">© <span data-year="">2026</span> Cornell University. If you have a disability and are having trouble accessing information on this website or need materials in an alternate format, contact <a href="mailto:web-accessibility@cornell.edu" style="color: var(--color-bg);">web-accessibility@cornell.edu</a> for assistance.</p>
+  </div>
+</footer>
+</body>
+</html>

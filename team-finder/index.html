@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team Finder | Cornell Maker Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../assets/modernist.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+<script src="../assets/config.js"></script>
+<script src="../assets/team-finder.js" defer></script>
+</head>
+<body>
+<div style="background: var(--color-accent-700); color: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;">
+    <a href="https://www.cornell.edu" style="display: block; line-height: 0;"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cornell_University_logo.svg" alt="Cornell University" style="height: 30px; width: auto; display: block; filter: brightness(0) invert(1);"></a>
+    <form class="site-search" action="https://www.google.com/search" method="get" role="search" style="display: flex; align-items: stretch; margin: 0;">
+      <input type="search" name="q" placeholder="Search this site" aria-label="Search this site" style="font: inherit; font-size: 14px; padding: 8px 12px; border: 2px solid var(--color-bg); border-right: 0; background: transparent; color: var(--color-bg); width: 200px; border-radius: 0; outline-offset: 2px;">
+      <button type="submit" style="font: inherit; font-size: 14px; font-weight: 700; padding: 8px 14px; border: 2px solid var(--color-bg); background: var(--color-bg); color: var(--color-accent-700); cursor: pointer; border-radius: 0;">Search</button>
+    </form>
+  </div>
+</div>
+
+<header style="border-bottom: 2px solid var(--color-divider); background: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px;">
+    <a href="../" style="text-decoration: none; font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; line-height: 1.1;">Cornell Maker Club</a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 15px;">
+      <a href="../join/" style="text-decoration: none;">Join</a>
+      <a href="../resources/" aria-current="page" style="text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--color-accent); text-underline-offset: 6px;">Resources</a>
+      <a href="../make-a-thon/" style="text-decoration: none;">Make-a-thon</a>
+      <a href="../project-videos-and-demos/" style="text-decoration: none;">Projects</a>
+      <a href="../safety/" style="text-decoration: none;">Safety</a>
+      <a href="../contact/" style="text-decoration: none;">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 48px) 56px; display: grid; gap: 20px;">
+    <nav aria-label="Breadcrumb" style="display: flex; gap: 8px; font-size: 14px;">
+      <a href="../">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../resources/">Resources</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Team Finder</span>
+    </nav>
+    <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(48px, 7vw, 96px); line-height: 1; letter-spacing: -0.03em; margin: 0;">Team Finder</h1>
+    <p style="font-size: 18px; line-height: 1.6; margin: 0; max-width: 58ch;">Have a project and need more hands? Post it here with your NetID and what kind of help you need. Members looking for something to work on can browse the board and reach out.</p>
+  </section>
+
+  <section id="post" style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 72px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+      <div style="display: grid; gap: 12px; align-content: start;">
+        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Post a Project</h2>
+        <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--color-neutral-700);">Only your NetID is shown. We’ll email your Cornell address a link to confirm the post, plus a link to remove it later. Replies from interested members come to that address too.</p>
+      </div>
+      <form id="post-form" class="span-2" novalidate style="display: grid; gap: 22px; min-width: 0;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 22px;">
+          <label style="display: grid; gap: 6px;"><span style="font-size: 14px; font-weight: 700;">NetID</span><input name="netid" placeholder="abc123" autocomplete="off" autocapitalize="off" spellcheck="false" style="font: inherit; font-size: 16px; padding: 10px 12px; border: 2px solid var(--color-divider); background: var(--color-bg); color: var(--color-text); border-radius: 0; width: 100%; box-sizing: border-box;"></label>
+          <label style="display: grid; gap: 6px;"><span style="font-size: 14px; font-weight: 700;">People needed</span><input name="count" type="number" min="1" max="20" value="1" style="font: inherit; font-size: 16px; padding: 10px 12px; border: 2px solid var(--color-divider); background: var(--color-bg); color: var(--color-text); border-radius: 0; width: 100%; box-sizing: border-box;"></label>
+        </div>
+        <label style="display: grid; gap: 6px;"><span style="font-size: 14px; font-weight: 700;">Project name</span><input name="title" maxlength="120" style="font: inherit; font-size: 16px; padding: 10px 12px; border: 2px solid var(--color-divider); background: var(--color-bg); color: var(--color-text); border-radius: 0; width: 100%; box-sizing: border-box;"></label>
+        <label style="display: grid; gap: 6px;"><span style="font-size: 14px; font-weight: 700;">Description</span><textarea name="desc" rows="4" maxlength="1500" placeholder="What are you building, and how far along is it?" style="font: inherit; font-size: 16px; padding: 10px 12px; border: 2px solid var(--color-divider); background: var(--color-bg); color: var(--color-text); border-radius: 0; width: 100%; box-sizing: border-box; resize: vertical; line-height: 1.5;"></textarea></label>
+        <fieldset style="border: 0; margin: 0; padding: 0; display: grid; gap: 10px;">
+          <legend style="font-size: 14px; font-weight: 700; padding: 0; margin-bottom: 10px;">Kind of work</legend>
+          <div id="chips" style="display: flex; flex-wrap: wrap; gap: 8px;"></div>
+        </fieldset>
+        <label style="display: grid; gap: 6px;"><span style="font-size: 14px; font-weight: 700;">Time commitment <span style="font-weight: 400; color: var(--color-neutral-700);">(optional)</span></span><input name="commit" maxlength="160" placeholder="e.g. 3–4 hrs/week through December" style="font: inherit; font-size: 16px; padding: 10px 12px; border: 2px solid var(--color-divider); background: var(--color-bg); color: var(--color-text); border-radius: 0; width: 100%; box-sizing: border-box;"></label>
+        <p id="post-error" role="alert" hidden style="margin: 0; font-size: 15px; color: var(--color-accent-700);"></p>
+        <p id="post-done" role="status" hidden style="margin: 0; font-size: 15px; padding: 12px 16px; border-left: 2px solid var(--color-accent);"></p>
+        <div style="display: flex;"><button id="post-submit" type="submit" class="btn btn-primary">Post project</button></div>
+      </form>
+    </div>
+  </section>
+
+  <section id="board" style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 96px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-top: 2px solid var(--color-divider); padding-top: 32px; margin-bottom: 24px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Open Projects</h2>
+      <span id="count" style="font-size: 15px;">0 projects</span>
+    </div>
+    <p id="demo-note" hidden style="margin: 0 0 20px; font-size: 14px; color: var(--color-neutral-700);">Preview mode: posts are saved in this browser only until the Google backend is connected.</p>
+    <p id="board-status" style="margin: 0; padding: 32px 0; border-top: 2px solid var(--color-divider); font-size: 16px; color: var(--color-neutral-700);">Loading projects…</p>
+    <div id="posts" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); border-top: 2px solid var(--color-divider); border-left: 2px solid var(--color-divider);"></div>
+  </section>
+</main>
+
+<footer style="background: var(--color-text); color: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 48px) 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; font-size: 14px; line-height: 1.7;">
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-family: var(--font-heading); font-size: 16px;">Cornell Maker Club</strong>
+      <span>209 Phillips Hall</span>
+      <span>Cornell University, Ithaca, NY 14853</span>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Members</strong>
+      <a href="../partordering/" style="color: var(--color-bg);">Part ordering</a>
+      <a href="../maintenance-request/" style="color: var(--color-bg);">Maintenance request</a>
+      <a href="../project-storage/" style="color: var(--color-bg);">Project storage</a>
+      <a href="../safety/" style="color: var(--color-bg);">Safety</a>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Learn</strong>
+      <a href="../workshops/" style="color: var(--color-bg);">Workshops</a>
+      <a href="../project-help/" style="color: var(--color-bg);">Project help</a>
+      <a href="../online-pcb-seminar/" style="color: var(--color-bg);">Online PCB seminar</a>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Follow</strong>
+      <a href="https://www.instagram.com/cornellmakerclub/" style="color: var(--color-bg);">Instagram</a>
+      <a href="https://www.linkedin.com/company/cornell-maker-club" style="color: var(--color-bg);">LinkedIn</a>
+      <a href="../contact/" style="color: var(--color-bg);">Contact us</a>
+    </div>
+    <p style="grid-column: 1 / -1; margin: 16px 0 0; padding-top: 20px; border-top: 1px solid var(--color-neutral-700); font-size: 13px;">© <span data-year="">2026</span> Cornell University. If you have a disability and are having trouble accessing information on this website or need materials in an alternate format, contact <a href="mailto:web-accessibility@cornell.edu" style="color: var(--color-bg);">web-accessibility@cornell.edu</a> for assistance.</p>
+  </div>
+</footer>
+</body>
+</html>

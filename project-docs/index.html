@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Documentation | Cornell Maker Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../assets/modernist.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body>
+<div style="background: var(--color-accent-700); color: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;">
+    <a href="https://www.cornell.edu" style="display: block; line-height: 0;"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cornell_University_logo.svg" alt="Cornell University" style="height: 30px; width: auto; display: block; filter: brightness(0) invert(1);"></a>
+  </div>
+</div>
+
+<header style="border-bottom: 2px solid var(--color-divider); background: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px;">
+    <a href="../" style="text-decoration: none; font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; line-height: 1.1;">Cornell Maker Club</a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 15px;">
+      <a href="../join/" style="text-decoration: none;">Join</a>
+      <a href="../resources/" aria-current="page" style="text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--color-accent); text-underline-offset: 6px;">Resources</a>
+      <a href="../make-a-thon/" style="text-decoration: none;">Make-a-thon</a>
+      <a href="../project-videos-and-demos/" style="text-decoration: none;">Projects</a>
+      <a href="../safety/" style="text-decoration: none;">Safety</a>
+      <a href="../contact/" style="text-decoration: none;">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-top: 48px; padding-bottom: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 32px 56px; align-items: end;">
+    <div style="display: grid; gap: 20px;">
+      <nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px;"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../resources/">Resources</a><span aria-hidden="true">/</span><span aria-current="page">Project Documentation</span></nav>
+      <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(40px, 5.6vw, 72px); line-height: 1; letter-spacing: -0.03em; margin: 0;">Project Documentation</h1>
+      <p style="font-size: 18px; line-height: 1.6; margin: 0; max-width: 56ch;">Show off your build. Here’s how to make a free website for your project with GitHub Pages, what to put on it, and two templates to start from.</p>
+    </div>
+    <figure class="grayscale" style="margin: 0; aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-neutral-200);">
+      <img src="../assets/img/led-matrix.jpg" alt="A member presenting the LED matrix display he built" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </figure>
+  </section>
+
+  <section id="why" style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 72px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Why document?</h2>
+      <div style="display: grid; gap: 20px; align-content: start; min-width: 0;">
+        <p style="font-size: 17px; line-height: 1.65; margin: 0;">A project page is the best way to show your work to recruiters and interviewers, and it helps the next member who wants to build something similar. If you ordered more than about $100 in parts, it’s also a great home for your project video.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="templates" style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 72px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+      <div style="display: grid; gap: 12px; align-content: start;">
+        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Start from a template</h2>
+        <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--color-neutral-700);">Both templates are free to copy. Pick one and you’ll have your own copy in seconds.</p>
+      </div>
+      <div class="span-2" style="display: grid; gap: 20px; align-content: start; min-width: 0;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); border-top: 2px solid var(--color-divider); border-left: 2px solid var(--color-divider);">
+          <article style="display: grid; gap: 12px; align-content: start; padding: 24px; border-right: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider);">
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0; color: var(--color-accent-700);">Easiest · no coding</span>
+            <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; letter-spacing: -0.01em; margin: 0;">Simple project page</h3>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0;">Write your page in Markdown, a plain-text format with simple symbols for headings, lists and images. GitHub turns it into a clean website for you. Best for most projects.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px;"><a class="btn btn-primary" href="https://github.com/Cornell-Maker-Club/project-template-simple/generate" style="text-decoration: none;">Use this template</a><a class="btn btn-ghost" href="https://github.com/Cornell-Maker-Club/project-template-simple" style="text-decoration: none;">View on GitHub</a></div>
+          </article>
+          <article style="display: grid; gap: 12px; align-content: start; padding: 24px; border-right: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider);">
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0; color: var(--color-accent-700);">Full control · HTML and CSS</span>
+            <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; letter-spacing: -0.01em; margin: 0;">Custom project site</h3>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0;">A ready-made page with sections for every part of your write-up. Edit the HTML and CSS to change anything about how it looks. Best if you want to design your own site.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px;"><a class="btn btn-secondary" href="https://github.com/Cornell-Maker-Club/project-template-custom/generate" style="text-decoration: none;">Use this template</a><a class="btn btn-ghost" href="https://github.com/Cornell-Maker-Club/project-template-custom" style="text-decoration: none;">View on GitHub</a></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps" style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 72px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Make your site</h2>
+      <div class="span-2" style="display: grid; gap: 20px; align-content: start; min-width: 0;">
+        <ol start="1" style="list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--color-divider);">
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">01</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;">Make a free <a href="https://github.com/signup">GitHub account</a>. Students can also apply for the <a href="https://education.github.com/pack">GitHub Student Developer Pack</a>.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">02</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;">Open one of the templates above and click <strong>Use this template → Create a new repository</strong>. Give it a short name, like <code>smart-plant-pot</code>, and make it <strong>Public</strong>.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">03</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;">Edit your page right in the browser: open a file, click the <strong>pencil icon</strong>, make your changes and click <strong>Commit changes</strong>. Add photos with <strong>Add file → Upload files</strong> into the <code>images</code> folder.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">04</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;">Go to <strong>Settings → Pages</strong>. Under <strong>Build and deployment</strong>, choose <strong>Deploy from a branch</strong>, pick <code>main</code> and <code>/ (root)</code>, and click <strong>Save</strong>.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">05</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;">After a minute or two your site is live at <code>https://your-username.github.io/your-repo-name/</code>. The link also appears at the top of the Pages settings.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">06</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;">Share it! Post the link on the Maker Club Slack, add it to your résumé, and send it to us so we can feature it on the <a href="../project-videos-and-demos/">Projects</a> page.</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="include" style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 72px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">What to include</h2>
+      <div class="span-2" style="display: grid; gap: 20px; align-content: start; min-width: 0;">
+        <ol start="1" style="list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--color-divider);">
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">01</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Overview.</strong> What you built and why, in two or three sentences, with your best photo or a short video at the top.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">02</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Demo.</strong> A video or GIF of it working. Upload long videos to YouTube and embed them.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">03</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Parts list.</strong> Every component with quantity, cost and where you bought it. A table works best.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">04</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Design.</strong> Schematics, wiring diagrams, CAD screenshots or files, and the key decisions you made.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">05</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Build log.</strong> The steps in order, with photos, including what went wrong and how you fixed it.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">06</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Code and files.</strong> A link to your code repository and any CAD or PCB files someone would need to rebuild it.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">07</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Results.</strong> How well it works, what you learned and what you would do differently next time.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">08</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Credits.</strong> Teammates, anyone who helped, and a note that it was built at the Cornell Maker Club.</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips" style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 96px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Tips</h2>
+      <div style="display: grid; gap: 20px; align-content: start; min-width: 0;">
+        <ul style="margin: 0; padding-left: 22px; display: grid; gap: 10px; font-size: 16px; line-height: 1.65;"><li><strong>Shrink photos</strong> before uploading. Under 1 MB each keeps your page fast; phone photos are often 5 MB or more.</li><li><strong>Keep videos on YouTube</strong> and embed them. GitHub isn’t built for large video files.</li><li><strong>Document as you go.</strong> Snap photos at each step. It’s much harder to remember what you did after it’s finished.</li><li><strong>Leave out private information</strong> like your phone number, CUID or home address. Everything in a public repository can be seen by anyone.</li><li><strong>Add a license</strong> if you want others to reuse your design. <a href="https://choosealicense.com">choosealicense.com</a> explains the options.</li></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer style="background: var(--color-text); color: var(--color-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 48px) 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; font-size: 14px; line-height: 1.7;">
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-family: var(--font-heading); font-size: 16px;">Cornell Maker Club</strong>
+      <span>209 Phillips Hall</span>
+      <span>Cornell University, Ithaca, NY 14853</span>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Members</strong>
+      <a href="../partordering/" style="color: var(--color-bg);">Part ordering</a>
+      <a href="../maintenance-request/" style="color: var(--color-bg);">Maintenance request</a>
+      <a href="../project-storage/" style="color: var(--color-bg);">Project storage</a>
+      <a href="../safety/" style="color: var(--color-bg);">Safety</a>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Learn</strong>
+      <a href="../workshops/" style="color: var(--color-bg);">Workshops</a>
+      <a href="../project-help/" style="color: var(--color-bg);">Project help</a>
+      <a href="../online-pcb-seminar/" style="color: var(--color-bg);">Online PCB seminar</a>
+    </div>
+    <div style="display: grid; gap: 4px; align-content: start;">
+      <strong style="font-size: 14px;">Follow</strong>
+      <a href="https://www.instagram.com/cornellmakerclub/" style="color: var(--color-bg);">Instagram</a>
+      <a href="https://www.linkedin.com/company/cornell-maker-club" style="color: var(--color-bg);">LinkedIn</a>
+      <a href="../contact/" style="color: var(--color-bg);">Contact us</a>
+    </div>
+    <p style="grid-column: 1 / -1; margin: 16px 0 0; padding-top: 20px; border-top: 1px solid var(--color-neutral-700); font-size: 13px;">© <span data-year="">2026</span> Cornell University. If you have a disability and are having trouble accessing information on this website or need materials in an alternate format, contact <a href="mailto:web-accessibility@cornell.edu" style="color: var(--color-bg);">web-accessibility@cornell.edu</a> for assistance.</p>
+  </div>
+</footer>
+</body>
+</html>

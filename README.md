@@ -23,6 +23,7 @@ Each page is the `index.html` inside a folder named after its address. The addre
 | Workshops | `/workshops/` |
 | Maintenance Request | `/maintenance-request/` |
 | Online PCB Seminar | `/online-pcb-seminar/` |
+| Project Documentation | `/project-docs/` |
 | Not found | `404.html`, shown for any missing page |
 
 `/gallery/` and `/projects/e-shop-approved-vendors/` forward to the sections that replaced them.
@@ -90,6 +91,6 @@ After editing `Code.gs`, go to **Deploy → Manage deployments → Edit → Vers
 ## Things to know
 
 - **Files still on the old WordPress site:** the three photos on Home and Resources, the PCB seminar slides, and the "Flower Awakens" video on Projects. If the WordPress site is shut down, those will break. Download them into `assets/` and update the links. The Cornell logo also loads from Wikimedia; swap in a Cornell-approved file.
-- **Project Documentation Template** links to `/project-docs/`, which doesn't exist yet and shows the not-found page.
+- **Project Documentation** (`/project-docs/`) links to two template repositories, `Cornell-Maker-Club/project-template-simple` and `Cornell-Maker-Club/project-template-custom`. Create them from `project-templates.zip` (see its README) so the page's buttons work.
 - **Search** sends the query to Google, limited to this site. New pages take a few days to appear in Google.
 - **Editing text:** open the page's `index.html` on GitHub, click the pencil icon, change the text between the tags and commit. The header and footer are repeated on each page, so change a nav link in all five HTML files.

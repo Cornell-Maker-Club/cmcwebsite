@@ -18,3 +18,26 @@ img { max-width: 100%; }
 /* Approved vendors disclosure */
 details > summary { list-style-position: inside; }
 details > summary:hover { color: var(--color-accent-700); }
+
+/* Training sign-ups (join/trainings.js): match the site's look.
+   "div#" outranks the widget's own styles, which load after this file. */
+div#cmc-trainings {
+  --cmct-ink: var(--color-text); --cmct-muted: var(--color-neutral-700); --cmct-line: var(--color-divider);
+  --cmct-full: var(--color-neutral-200); --cmct-accent: var(--color-accent); --cmct-accent-ink: var(--color-bg);
+  --cmct-bad: var(--color-accent-700); --cmct-bad-bg: var(--color-accent-100); --cmct-mono: var(--font-body);
+  gap: 28px;
+}
+div#cmc-trainings .cmct-day { gap: 10px; }
+div#cmc-trainings .cmct-daylabel { font: 800 13px var(--font-heading); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); }
+div#cmc-trainings .cmct-s { border: 2px solid var(--color-divider); border-radius: 0; padding: 20px; gap: 14px; }
+div#cmc-trainings .cmct-name { font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; }
+div#cmc-trainings .cmct-meta, div#cmc-trainings .cmct-notes { font-size: 15px; line-height: 1.5; }
+div#cmc-trainings .cmct-spots { font: 700 14px var(--font-body); }
+div#cmc-trainings .cmct-form input { font: 16px var(--font-body); padding: 10px 12px; border: 2px solid var(--color-divider); border-radius: 0; background: var(--color-bg); }
+div#cmc-trainings .cmct-form input:focus-visible { border-color: var(--color-accent); outline-offset: 0; }
+div#cmc-trainings .cmct-form button { font: 800 14px var(--font-heading); border-radius: 0; padding: 10px 18px; }
+div#cmc-trainings .cmct-form button:not(:disabled):hover { background: var(--color-accent-600); }
+div#cmc-trainings .cmct-msg { border-radius: 0; font-size: 15px; padding: 10px 12px; }
+div#cmc-trainings .cmct-msg.ok { background: var(--color-neutral-200); color: var(--color-text); border-left: 2px solid var(--color-text); }
+div#cmc-trainings .cmct-msg.bad { border-left: 2px solid var(--color-accent); }
+div#cmc-trainings .cmct-empty { margin: 0; font-size: 16px; }

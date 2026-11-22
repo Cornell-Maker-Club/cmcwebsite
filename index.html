@@ -12,17 +12,18 @@
 <link rel="icon" href="assets/img/icon-192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <script src="assets/site.js" defer></script>
+<script src="assets/announcements.js" defer></script>
 </head>
 <body>
-<div style="background: var(--color-accent-700); color: var(--color-bg);">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;">
+<div style="background: var(--color-text); color: var(--color-bg);">
+  <div style="max-width: 1440px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;">
     <a href="https://www.cornell.edu" style="display: block; line-height: 0;"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cornell_University_logo.svg" alt="Cornell University" style="height: 30px; width: auto; display: block; filter: brightness(0) invert(1);"></a>
   </div>
 </div>
 
 <header style="border-bottom: 2px solid var(--color-divider); background: var(--color-bg);">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px;">
-    <a href="#top" style="text-decoration: none; font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; line-height: 1.1;">Cornell Maker Club</a>
+  <div style="max-width: 1440px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px;">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; line-height: 1.1;"><img src="assets/img/cmc-logo.png" alt="" width="48" height="48" style="width: 48px; height: 48px; display: block;">Cornell Maker Club</a>
     <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 15px;">
       <a href="join/" style="text-decoration: none;">Join</a>
       <a href="resources/" style="text-decoration: none;">Resources</a>
@@ -35,13 +36,13 @@
 </header>
 
 <main id="top">
-  <section style="max-width: 1200px; margin: 0 auto; padding: 64px clamp(20px, 4vw, 48px) 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px 56px; align-items: end;">
+  <section style="max-width: 1440px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-top: 64px; padding-bottom: 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px 56px; align-items: end;">
     <div style="display: grid; gap: 24px;">
-      <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(40px, 5.6vw, 72px); line-height: 1.02; letter-spacing: -0.025em; margin: 0;">Cornell’s Premier Space for Makers</h1>
-      <p style="font-size: 18px; line-height: 1.6; margin: 0; max-width: 54ch;">The Cornell Maker Club (CMC) is a student-run club for experimenting with innovative technologies. We provide tools, workspace, and a community for all interested members of Cornell’s campus. Our purpose is to provide a space where motivated and creative minds can give shape to their ideas and to help spread this passion through the campus and beyond.</p>
+      <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(40px, 5.6vw, 80px); line-height: 1.02; letter-spacing: -0.025em; margin: 0;">Cornell’s Premier Space for Makers</h1>
+      <p style="font-size: 18px; line-height: 1.6; margin: 0; max-width: 58ch;">The Cornell Maker Club (CMC) is a student-run club for experimenting with innovative technologies. We provide tools, workspace, and a community for all interested members of Cornell’s campus. Our purpose is to provide a space where motivated and creative minds can give shape to their ideas and to help spread this passion through the campus and beyond.</p>
       <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-        <a class="btn btn-primary" href="join/" style="text-decoration: none;">Become a member</a>
-        <a class="btn btn-ghost" href="./lab-forms-and-information/" style="text-decoration: none;">Lab forms and information</a>
+        <a class="btn btn-primary" href="#how-to-join" style="text-decoration: none;">Become a member</a>
+        <a class="btn btn-ghost" href="lab-forms-and-information/" style="text-decoration: none;">Lab forms and information</a>
       </div>
     </div>
     <figure class="grayscale" style="margin: 0; aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-neutral-200);">
@@ -49,28 +50,37 @@
     </figure>
   </section>
 
+  <section id="announcements" aria-labelledby="announcements-title" style="max-width: 1440px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 72px;" hidden>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-top: 2px solid var(--color-divider); padding-top: 32px; margin-bottom: 24px;">
+      <h2 id="announcements-title" style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Announcements</h2>
+      <a href="https://join.slack.com/t/cornell-maker-club/shared_invite/zt-3eeksndsw-nAEYDB5x_JBNL~ArK9_58Q" style="font-size: 15px;">More on Slack</a>
+    </div>
+    <!-- Announcements: paste the link to the club's Announcements Google Sheet into data-sheet below. -->
+    <div id="cmc-announcements" class="poster-board" data-sheet=""></div>
+  </section>
+
   <section aria-label="Quick links" style="border-top: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider);">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+    <div style="max-width: 1440px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
         <a class="fill" href="join/" style="display: grid; gap: 8px; align-content: space-between; min-height: 150px; padding: 24px; border-left: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text); background: var(--color-bg);">
           <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; letter-spacing: -0.015em; line-height: 1.1;">Join</span>
-          <span style="font-size: 15px; line-height: 1.45;">Sign up for training &amp; join our Slack</span>
+          <span style="font-size: 15px; line-height: 1.45;">Join the Slack &amp; sign up for training</span>
         </a>
         <a class="fill" href="resources/" style="display: grid; gap: 8px; align-content: space-between; min-height: 150px; padding: 24px; border-left: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text); background: var(--color-bg);">
           <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; letter-spacing: -0.015em; line-height: 1.1;">Resources</span>
           <span style="font-size: 15px; line-height: 1.45;">Parts, tools and lab information</span>
         </a>
-        <a class="fill" href="./workshops/" style="display: grid; gap: 8px; align-content: space-between; min-height: 150px; padding: 24px; border-left: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text); background: var(--color-bg);">
+        <a class="fill" href="workshops/" style="display: grid; gap: 8px; align-content: space-between; min-height: 150px; padding: 24px; border-left: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text); background: var(--color-bg);">
           <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; letter-spacing: -0.015em; line-height: 1.1;">Workshops</span>
           <span style="font-size: 15px; line-height: 1.45;">Skill sessions and project help</span>
         </a>
-        <a class="fill" href="./make-a-thon/" style="display: grid; gap: 8px; align-content: space-between; min-height: 150px; padding: 24px; border-left: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text); background: var(--color-bg);">
+        <a class="fill" href="make-a-thon/" style="display: grid; gap: 8px; align-content: space-between; min-height: 150px; padding: 24px; border-left: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text); background: var(--color-bg);">
           <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; letter-spacing: -0.015em; line-height: 1.1;">Make-a-thon</span>
           <span style="font-size: 15px; line-height: 1.45;">Our annual build event</span>
         </a>
     </div>
   </section>
 
-  <section id="labs" style="max-width: 1200px; margin: 0 auto; padding: 80px clamp(20px, 4vw, 48px) 0;">
+  <section id="labs" style="max-width: 1440px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-top: 80px;">
     <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0; margin: 0 0 32px;">David Ahl &amp; Hui Family Maker Lab</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 0 56px; border-top: 2px solid var(--color-divider);">
       <article style="padding: 28px 0 40px; display: grid; gap: 12px; align-content: start;">
@@ -79,45 +89,77 @@
       </article>
     </div>
     <figure class="grayscale" style="margin: 0; aspect-ratio: 21 / 9; overflow: hidden; background: var(--color-neutral-200);">
-      <img src="assets/img/maker-lab.jpg" alt="The Maker Club lab: soldering benches and parts drawers" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+      <img src="assets/img/maker-lab.jpg" alt="The Maker Club lab: soldering benches and parts drawers" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </figure>
-    <h3 style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; margin: 20px 0 6px; padding-left: 18px; color: var(--color-accent-700);">NOTICE</h3>
+    <h3 style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0; margin: 20px 0 6px; padding-left: 18px; color: var(--color-accent-700);">Notice</h3>
     <p style="font-size: 15px; line-height: 1.6; margin: 0; max-width: 80ch; padding-left: 16px; border-left: 2px solid var(--color-accent);">Cornell Maker Club resources are for personal projects only. They are not to be used for classes, research, or project teams. For those categories, please talk with your professor/advisor/team leads or visit the <a href="https://rpl.engineering.cornell.edu/">Rapid Prototyping Lab</a> located in Upson Hall.</p>
   </section>
 
-  <section id="join" style="max-width: 1200px; margin: 0 auto; padding: 80px clamp(20px, 4vw, 48px);">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 32px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+  <section id="how-to-join" style="max-width: 1440px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-top: 80px; padding-bottom: 72px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
       <div style="display: grid; gap: 20px; align-content: start;">
-        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Getting Involved</h2>
-        <p style="font-size: 17px; line-height: 1.65; margin: 0;">Membership is open to all students enrolled at Cornell University, including both undergraduate and graduate students. Members typically become engaged in one or more personal or group projects.</p>
-        <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--color-accent-700);">There are limited spots available and they are filled on a first come first serve basis.</p>
+        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">How to Join</h2>
+        <p style="font-size: 17px; line-height: 1.65; margin: 0;">Membership is open to everyone at Cornell: undergraduate and graduate students, and professors too. Members typically become engaged in one or more personal or group projects.</p>
+        <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--color-accent-700);">Training sessions have a limited number of slots and fill up quickly, so sign up early.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;"><a class="btn btn-primary" href="https://join.slack.com/t/cornell-maker-club/shared_invite/zt-3eeksndsw-nAEYDB5x_JBNL~ArK9_58Q" style="text-decoration: none;">Join the Slack</a><a class="btn btn-secondary" href="join/#training" style="text-decoration: none;">Sign up for training</a></div>
       </div>
-      <div style="display: grid; gap: 20px; align-content: start;">
-        <ol style="margin: 0; padding-left: 22px; display: grid; gap: 14px; font-size: 17px; line-height: 1.65;">
-          <li>Fill out the membership form.</li>
-          <li>Sign up for an open training session on the Join page.</li>
-          <li>Complete the required trainings to gain membership and lab access.</li>
+      <div style="display: grid; gap: 20px; align-content: start; min-width: 0;">
+        <ol start="1" style="list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--color-divider);">
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">01</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Join the Slack!</strong> This is where most of our communication goes out: training times, events and lab news. <a href="https://join.slack.com/t/cornell-maker-club/shared_invite/zt-3eeksndsw-nAEYDB5x_JBNL~ArK9_58Q">Join the Maker Club Slack</a>.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">02</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Sign up for general training</strong> to get door access. Find open sessions on the <a href="join/#training">Join page</a>.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">03</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Within two weeks</strong> of your training, you should have card access to our lab space.</span>
+          </li>
+          <li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span aria-hidden="true" style="font-family: var(--font-heading); font-weight: 800; font-size: 22px; line-height: 1.3; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">04</span>
+            <span style="font-size: 17px; line-height: 1.65; margin: 0;"><strong>Want to use specific equipment</strong> like the 3D printers or laser cutter? Attend an additional training for that machine. Those sessions are on the <a href="join/#training">Join page</a> too.</span>
+          </li>
         </ol>
-        <div style="display: flex;">
-          <a class="btn btn-primary" href="join/#training" style="text-decoration: none;">Learn More About Training</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="calendar" style="max-width: 1440px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 72px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px 24px; border-top: 2px solid var(--color-divider); padding-top: 32px; margin-bottom: 24px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Trainings &amp; Workshops</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 15px;"><a href="https://calendar.google.com/calendar/u/0?cid=dWUyMWs4OWpvaDUxaTF1MzZyOW5jZ3BycG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Add training calendar</a><a href="https://calendar.google.com/calendar/u/0?cid=Y29ybmVsbG1ha2VyY2x1YkBnbWFpbC5jb20">Add workshop calendar</a></div>
+    </div>
+    <div style="height: 640px; border: 2px solid var(--color-divider); background: #fff;"><iframe src="https://calendar.google.com/calendar/embed?src=ue21k89joh51i1u36r9ncgprpo%40group.calendar.google.com&amp;src=cornellmakerclub%40gmail.com&amp;ctz=America%2FNew_York&amp;mode=MONTH&amp;showPrint=0&amp;showTitle=0&amp;showCalendars=1" title="Maker Club trainings and workshops calendar" loading="lazy" style="width: 100%; height: 100%; border: 0; display: block;"></iframe></div>
+  </section>
+
+  <section id="collaborate" style="max-width: 1440px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 72px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 56px; border-top: 2px solid var(--color-divider); padding-top: 32px;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Collaborate</h2>
+      <div class="span-2" style="display: grid; gap: 20px; align-content: start; min-width: 0;">
+        <div style="display: grid; min-width: 0; border-top: 2px solid var(--color-divider);">
+          <a class="fill" href="team-finder/" style="display: grid; gap: 4px; padding: 20px 12px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+            <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; letter-spacing: -0.01em;">Team Finder</span><span style="font-size: 16px; line-height: 1.5;">Post your project and find members to build it with, or join someone else’s</span>
+          </a>
+          <a class="fill" href="project-docs/" style="display: grid; gap: 4px; padding: 20px 12px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+            <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; letter-spacing: -0.01em;">Project Documentation<span style="display: inline-block; vertical-align: 0.2em; margin-left: 10px; padding: 3px 8px; font-family: var(--font-heading); font-weight: 800; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; background: var(--color-text); color: var(--color-bg);">New!</span></span><span style="font-size: 16px; line-height: 1.5;">How to make a website for your project on GitHub, with templates to start from</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 80px;">
+  <section id="projects" style="max-width: 1440px; margin: 0 auto; padding-left: clamp(20px, 4vw, 48px); padding-right: clamp(20px, 4vw, 48px); padding-bottom: 80px;">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-top: 2px solid var(--color-divider); padding-top: 32px; margin-bottom: 24px;">
-      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Projects</h2>
-      <a href="./project-videos-and-demos/" style="font-size: 15px;">All project videos and demos</a>
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.02em; margin: 0;">Projects</h2><a href="project-videos-and-demos/" style="font-size: 15px;">All project videos and demos</a>
     </div>
-    <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);">
-      <iframe src="https://www.youtube-nocookie.com/embed/vyewIHxMP0Q" title="Cornell Maker Club" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe>
-    </div>
+    <div style="position: relative; aspect-ratio: 16 / 9; background: var(--color-text);"><iframe src="https://www.youtube-nocookie.com/embed/vyewIHxMP0Q" title="Cornell Maker Club" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
   </section>
 </main>
 
 <footer style="background: var(--color-text); color: var(--color-bg);">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 48px) 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; font-size: 14px; line-height: 1.7;">
+  <div style="max-width: 1440px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 48px) 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; font-size: 14px; line-height: 1.7;">
     <div style="display: grid; gap: 4px; align-content: start;">
       <strong style="font-family: var(--font-heading); font-size: 16px;">Cornell Maker Club</strong>
       <span>209 Phillips Hall</span>

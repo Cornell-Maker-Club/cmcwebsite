@@ -41,3 +41,21 @@ div#cmc-trainings .cmct-msg { border-radius: 0; font-size: 15px; padding: 10px 1
 div#cmc-trainings .cmct-msg.ok { background: var(--color-neutral-200); color: var(--color-text); border-left: 2px solid var(--color-text); }
 div#cmc-trainings .cmct-msg.bad { border-left: 2px solid var(--color-accent); }
 div#cmc-trainings .cmct-empty { margin: 0; font-size: 16px; }
+
+/* Homepage announcements ("living poster") */
+.poster-board { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 32px 24px; }
+.poster { display: grid; gap: 10px; align-content: start; }
+.poster-img-link { display: block; }
+.poster-img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: contain; background: var(--color-neutral-200); border: 2px solid var(--color-divider); }
+.poster-img-link:hover .poster-img { border-color: var(--color-accent); }
+.poster-date { font-family: var(--font-heading); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); }
+.poster-title { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; letter-spacing: -0.01em; margin: 0; }
+.poster-title a { text-decoration: none; }
+.poster-title a:hover { text-decoration: underline; }
+.poster-text { font-size: 15px; line-height: 1.6; margin: 0; white-space: pre-line; }
+
+.poster-block { aspect-ratio: 4 / 5; background: var(--color-accent-700); color: var(--color-bg); padding: 24px; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px; border: 2px solid var(--color-accent-700); }
+.poster-block-date { font-family: var(--font-heading); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
+.poster-block-title { font-family: var(--font-heading); font-weight: 800; font-size: clamp(28px, 3vw, 40px); line-height: 1.02; letter-spacing: -0.02em; overflow-wrap: anywhere; }
+.poster-img-link:hover .poster-block { background: var(--color-accent); border-color: var(--color-accent); }
+.poster-img-link { text-decoration: none; color: inherit; }

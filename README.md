@@ -63,6 +63,22 @@ The Join page's **Training** section loads the session list and sign-up form fro
 
 The invite adds each person as a guest on that session's event on the club's Training calendar (creating the event the first time someone signs up). Guests can't see each other's emails. If your sessions are already events on that calendar under a different title, change the `title` line in `sendTrainingConfirmation_` to match them so people are added to the existing event.
 
+## Homepage announcements (the "living poster")
+
+The Announcements section on the homepage shows flyers and notices from a Google Sheet, so any board member can post one without touching GitHub.
+
+1. Create a Google Sheet named "CMC Announcements" in the shared drive. Quickest: in Google Drive, upload `CMC Announcements.csv`, then right-click it → **Open with → Google Sheets**. Or make a blank sheet and type these headers in row 1: `Title`, `Date`, `Details`, `Flyer`, `Link`, `Show until`.
+2. Add one row per announcement. The top row shows first.
+   - **Title** is required. Leave it blank to skip a row.
+   - **Date** is shown as typed, for example `Dec 3` or `Spring 2027`.
+   - **Flyer** is optional: paste the Google Drive share link to an image (set the image to "Anyone with the link can view"), or any image web address. With no flyer, the site draws a red poster with the title.
+   - **Link** is optional: where the poster goes when clicked.
+   - **Show until** is optional: a date like `2026-12-05`. After that day the poster disappears on its own.
+3. Click **Share**, set **General access** to **Anyone with the link: Viewer**, and copy the link.
+4. In this repository, open `index.html`, find `data-sheet=""` (search for "Announcements"), paste the link between the quotes, and commit.
+
+After that, edits to the sheet appear on the site within a minute or so. If the sheet is empty, or every announcement has expired, the section hides itself.
+
 ## Team Finder setup
 
 GitHub Pages can only host static files, so the Team Finder stores posts in a Google Sheet through a small Google Apps Script. It takes about 10 minutes. Use the club's shared Google account, because emails are sent from whichever account deploys the script.
@@ -90,7 +106,7 @@ After editing `Code.gs`, go to **Deploy → Manage deployments → Edit → Vers
 
 ## Things to know
 
-- **Files still on the old WordPress site:** the three photos on Home and Resources, the PCB seminar slides, and the "Flower Awakens" video on Projects. If the WordPress site is shut down, those will break. Download them into `assets/` and update the links. The Cornell logo also loads from Wikimedia; swap in a Cornell-approved file.
+- **Files from the old WordPress site** (the original photos, the PCB seminar slides and the "Flower Awakens" video) are copied into `assets/img/` and `assets/files/`, so nothing depends on the old site. The Cornell logo in the top band still loads from Wikimedia; swap in a Cornell-approved file if you have one.
 - **Project Documentation** (`/project-docs/`) links to two template repositories, `Cornell-Maker-Club/project-template-simple` and `Cornell-Maker-Club/project-template-custom`. Create them from `project-templates.zip` (see its README) so the page's buttons work.
 - **Search** sends the query to Google, limited to this site. New pages take a few days to appear in Google.
 - **Editing text:** open the page's `index.html` on GitHub, click the pencil icon, change the text between the tags and commit. The header and footer are repeated on each page, so change a nav link in all five HTML files.
